@@ -1,14 +1,7 @@
 /* Mordomo — shared UI primitives */
 
-const {
-    useState,
-    useEffect,
-    useRef,
-    useCallback,
-    useMemo,
-    createContext,
-    useContext,
-} = React
+import { useState, useEffect, useRef, useCallback, useMemo, createContext, useContext } from 'react'
+import { Icon } from './icons'
 
 /* ---------- App context ---------- */
 const AppCtx = createContext(null)
@@ -617,19 +610,4 @@ const ListRow = ({ icon, title, subtitle, right, onClick, divider = true }) => (
     </>
 )
 
-Object.assign(window, {
-    AppCtx,
-    useApp,
-    StatusBar,
-    TabBar,
-    TopBar,
-    Placeholder,
-    ItemCard,
-    ButlerBubble,
-    Sheet,
-    Toast,
-    ScreenHeader,
-    ChipRow,
-    StatusBadge,
-    ListRow,
-})
+export { AppCtx, useApp, StatusBar, TabBar, TopBar, Placeholder, ItemCard, ButlerBubble, Sheet, Toast, ScreenHeader, ChipRow, StatusBadge, ListRow }

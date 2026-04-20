@@ -10,12 +10,6 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <title>Mordomo — Atendente Virtual</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap"
-        />
         <style>
             /* ============ Mordomo Design Tokens ============ */
             :root {
@@ -718,21 +712,6 @@
                 transform: scale(0.98);
             }
         </style>
-        <script
-            src="https://unpkg.com/react@18.3.1/umd/react.development.js"
-            integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"
-            integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"
-            integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y"
-            crossorigin="anonymous"
-        ></script>
     </head>
     <body>
         <div id="root"></div>
@@ -748,19 +727,6 @@
             window.__TWEAKS__ = TWEAKS
         </script>
 
-        <script type="text/babel" src="data.jsx"></script>
-        <script type="text/babel" src="icons.jsx"></script>
-        <script type="text/babel" src="ui.jsx"></script>
-        <script type="text/babel" src="screens/home.jsx"></script>
-        <script type="text/babel" src="screens/explore.jsx"></script>
-        <script type="text/babel" src="screens/services.jsx"></script>
-        <script type="text/babel" src="screens/mystay.jsx"></script>
-        <script type="text/babel" src="screens/shop.jsx"></script>
-        <script type="text/babel" src="screens/info.jsx"></script>
-        <script type="text/babel" src="screens/profile.jsx"></script>
-        <script type="text/babel" src="screens/detail.jsx"></script>
-        <script type="text/babel" src="screens/butler.jsx"></script>
-        <script type="text/babel" src="screens/notifications.jsx"></script>
-        <script type="text/babel" src="app.jsx"></script>
+        <script type="module" src="/main.jsx"></script>
     </body>
 </html>

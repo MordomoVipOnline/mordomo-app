@@ -1,3 +1,8 @@
+import { useState, useEffect, useMemo, useRef } from 'react'
+import { useApp } from '../ui'
+import { Icon } from '../icons'
+import { CHAT_HISTORY, BUTLER_SUGGESTIONS } from '../data'
+
 /* Butler — conversational screen */
 
 const ButlerScreen = () => {
@@ -302,4 +307,4 @@ const TypingDot = ({ delay }) => (
     </div>
 )
 
-window.ButlerScreen = ButlerScreen
+export default ButlerScreen

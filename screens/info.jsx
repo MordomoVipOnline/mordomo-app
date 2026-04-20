@@ -1,3 +1,8 @@
+import { useState } from 'react'
+import { ScreenHeader, ChipRow } from '../ui'
+import { Icon } from '../icons'
+import { INFO_SECTIONS } from '../data'
+
 /* Info — tips, ESG, hotel info */
 
 const InfoScreen = () => {
@@ -67,4 +72,4 @@ const InfoScreen = () => {
   );
 };
 
-window.InfoScreen = InfoScreen;
+export default InfoScreen

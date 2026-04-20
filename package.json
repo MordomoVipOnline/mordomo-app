@@ -2,9 +2,21 @@
     "name": "mordomo",
     "version": "1.0.0",
     "description": "Mordomo — Atendente Virtual (Virtual Concierge PWA)",
+    "type": "module",
     "scripts": {
-        "start": "python3 -m http.server 3000",
-        "serve": "npx serve . --listen 3000 --no-clipboard",
-        "dev": "npx http-server . -p 3000 -c-1 --cors -o"
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@fontsource/geist": "^5.2.8",
+        "@fontsource/geist-mono": "^5.2.7",
+        "@fontsource/instrument-serif": "^5.2.8",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react": "^4.3.1",
+        "vite": "^5.4.0"
     }
 }

@@ -1,5 +1,5 @@
 /* Minimal, line-based icon set — Apple HIG style */
-const Icon = ({ name, size = 22, stroke = 1.6, style = {} }) => {
+export const Icon = ({ name, size = 22, stroke = 1.6, style = {} }) => {
   const common = {
     width: size, height: size, viewBox: "0 0 24 24",
     fill: "none", stroke: "currentColor",
@@ -100,4 +100,3 @@ const Icon = ({ name, size = 22, stroke = 1.6, style = {} }) => {
   }
 };
 
-window.Icon = Icon;

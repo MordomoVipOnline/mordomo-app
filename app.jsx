@@ -1,3 +1,18 @@
+import { useState, useEffect } from 'react'
+import { AppCtx, TopBar, TabBar, Sheet, Toast } from './ui'
+import { Icon } from './icons'
+import { NOTIFICATIONS } from './data'
+import HomeScreen from './screens/home'
+import ExploreScreen from './screens/explore'
+import MyStayScreen from './screens/mystay'
+import ProfileScreen from './screens/profile'
+import ShopScreen from './screens/shop'
+import InfoScreen from './screens/info'
+import ServicesScreen from './screens/services'
+import DetailScreen from './screens/detail'
+import ButlerScreen from './screens/butler'
+import NotificationsScreen from './screens/notifications'
+
 /* Mordomo app — root component  */
 
 const App = () => {
@@ -98,8 +113,8 @@ const App = () => {
     }
 
     const nav = (to) => {
-        if (to === "butler") setOverlay("butler")
-        else if (to === "notifications") setNotifOpen(true)
+        // if (to === "butler") setOverlay("butler")
+        if (to === "notifications") setNotifOpen(true)
         else if (to === "services") setServicesSheetOpen(true)
         else if (
             ["home", "explore", "stay", "profile", "shop", "info"].includes(to)
@@ -202,7 +217,7 @@ const App = () => {
                         onClose={() => setDetailItem(null)}
                     />
                 )}
-                {overlay === "butler" && <ButlerScreen />}
+                {/* overlay === "butler" && <ButlerScreen /> */}
                 {toastMsg && <Toast message={toastMsg} />}
                 {tweaksOpen && (
                     <TweaksPanel
@@ -328,4 +343,4 @@ const TweaksPanel = ({ tweaks, setTweak, onClose }) => (
     </div>
 )
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App />)
+export default App

@@ -1,3 +1,7 @@
+import { useState } from 'react'
+import { useApp, ScreenHeader, Placeholder, ListRow, StatusBadge } from '../ui'
+import { GUEST, EXPLORE_ITEMS } from '../data'
+
 /* My Stay — reservations, requests, favorites */
 
 const MyStayScreen = () => {
@@ -161,4 +165,4 @@ const EmptyState = ({ title, body, cta, onCta }) => (
   </div>
 );
 
-window.MyStayScreen = MyStayScreen;
+export default MyStayScreen

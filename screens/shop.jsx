@@ -1,3 +1,7 @@
+import { useState } from 'react'
+import { useApp, ScreenHeader, ChipRow, Placeholder, Sheet } from '../ui'
+import { SHOP_ITEMS, SHOP_CATEGORIES } from '../data'
+
 /* Shop — boutique (no checkout, request to room) */
 
 const ShopScreen = () => {
@@ -73,4 +77,4 @@ const ShopScreen = () => {
   );
 };
 
-window.ShopScreen = ShopScreen;
+export default ShopScreen

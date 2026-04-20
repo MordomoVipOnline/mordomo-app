@@ -1,3 +1,8 @@
+import { useMemo } from "react"
+import { useApp, ItemCard, Placeholder, StatusBadge, ButlerBubble } from "../ui"
+import { Icon } from "../icons"
+import { GUEST, BUTLER_SUGGESTIONS, EXPLORE_ITEMS } from "../data"
+
 /* Home — context-aware dashboard */
 
 const greetingFor = (tod, name) => {
@@ -147,10 +152,10 @@ const HomeScreen = () => {
                         }}
                     />
                     <QuickAction
-                        icon="sparkle"
-                        label="Falar com Mordomo"
-                        subtitle="Pergunte qualquer coisa"
-                        onClick={() => nav("butler")}
+                        icon="info"
+                        label="Informações"
+                        subtitle="Resort & serviços"
+                        onClick={() => nav("info")}
                     />
                 </div>
             </div>
@@ -410,6 +415,7 @@ const QuickAction = ({ icon, label, subtitle, onClick }) => (
             textAlign: "left",
             cursor: "pointer",
             fontFamily: "var(--font-sans)",
+            color: "var(--ink-1)",
             display: "flex",
             flexDirection: "column",
             gap: 10,
@@ -441,4 +447,4 @@ const QuickAction = ({ icon, label, subtitle, onClick }) => (
     </button>
 )
 
-window.HomeScreen = HomeScreen
+export default HomeScreen

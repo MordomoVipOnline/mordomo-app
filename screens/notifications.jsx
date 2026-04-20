@@ -1,3 +1,8 @@
+import { useState } from 'react'
+import { useApp, ChipRow } from '../ui'
+import { Icon } from '../icons'
+import { NOTIFICATIONS, NOTIF_CATEGORIES } from '../data'
+
 /* Notifications screen */
 
 const tintMap = {
@@ -301,4 +306,4 @@ const NotifRow = ({ n, onAct }) => {
     )
 }
 
-window.NotificationsScreen = NotificationsScreen
+export default NotificationsScreen

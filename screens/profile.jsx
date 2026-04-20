@@ -1,3 +1,7 @@
+import { useApp, ListRow } from '../ui'
+import { Icon } from '../icons'
+import { GUEST } from '../data'
+
 /* Profile */
 
 const ProfileScreen = () => {
@@ -164,4 +168,4 @@ const ProfileScreen = () => {
     )
 }
 
-window.ProfileScreen = ProfileScreen
+export default ProfileScreen

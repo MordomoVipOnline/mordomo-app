@@ -1,6 +1,6 @@
 /* Mordomo data — Portuguese (Brazil) */
 
-const GUEST = {
+export const GUEST = {
     name: "Emanuel",
     firstName: "Emanuel",
     checkIn: "14 abr",
@@ -12,7 +12,7 @@ const GUEST = {
 }
 
 /* 6 categories — discovery-unified */
-const EXPLORE_CATEGORIES = [
+export const EXPLORE_CATEGORIES = [
     { id: "all", label: "Tudo" },
     { id: "gastronomia", label: "Gastronomia" },
     { id: "bem-estar", label: "Bem-estar" },
@@ -21,7 +21,7 @@ const EXPLORE_CATEGORIES = [
     { id: "kids", label: "Família" },
 ]
 
-const EXPLORE_ITEMS = [
+export const EXPLORE_ITEMS = [
     {
         id: "rest-orla",
         type: "restaurante",
@@ -154,7 +154,7 @@ const EXPLORE_ITEMS = [
 ]
 
 /* Services — grouped by intent, not department */
-const SERVICE_GROUPS = [
+export const SERVICE_GROUPS = [
     {
         id: "quarto",
         title: "No quarto",
@@ -247,8 +247,8 @@ const SERVICE_GROUPS = [
 ]
 
 /* Shop */
-const SHOP_CATEGORIES = ["Tudo", "Essenciais", "Spa", "Livraria", "Lembranças"]
-const SHOP_ITEMS = [
+export const SHOP_CATEGORIES = ["Tudo", "Essenciais", "Spa", "Livraria", "Lembranças"]
+export const SHOP_ITEMS = [
     {
         id: "sh-oil",
         title: "Óleo Corporal da Casa",
@@ -306,7 +306,7 @@ const SHOP_ITEMS = [
 ]
 
 /* Info */
-const INFO_SECTIONS = [
+export const INFO_SECTIONS = [
     {
         id: "dicas",
         title: "Dicas da estadia",
@@ -376,7 +376,7 @@ const INFO_SECTIONS = [
 ]
 
 /* Butler suggestions — time-aware */
-const BUTLER_SUGGESTIONS = {
+export const BUTLER_SUGGESTIONS = {
     morning: [
         {
             id: "b-m1",
@@ -409,7 +409,7 @@ const BUTLER_SUGGESTIONS = {
     ],
 }
 
-const CHAT_HISTORY = [
+export const CHAT_HISTORY = [
     { from: "butler", text: "Boa tarde, Emanuel. Como posso ajudar?" },
     {
         from: "butler",
@@ -418,7 +418,7 @@ const CHAT_HISTORY = [
 ]
 
 /* Notifications */
-const NOTIFICATIONS = [
+export const NOTIFICATIONS = [
     {
         id: "n-1",
         category: "Reservas",
@@ -505,7 +505,7 @@ const NOTIFICATIONS = [
     },
 ]
 
-const NOTIF_CATEGORIES = [
+export const NOTIF_CATEGORIES = [
     "Tudo",
     "Reservas",
     "Serviços",
@@ -514,17 +514,3 @@ const NOTIF_CATEGORIES = [
     "Boutique",
     "Hotel",
 ]
-
-Object.assign(window, {
-    GUEST,
-    EXPLORE_CATEGORIES,
-    EXPLORE_ITEMS,
-    SERVICE_GROUPS,
-    SHOP_CATEGORIES,
-    SHOP_ITEMS,
-    INFO_SECTIONS,
-    BUTLER_SUGGESTIONS,
-    CHAT_HISTORY,
-    NOTIFICATIONS,
-    NOTIF_CATEGORIES,
-})

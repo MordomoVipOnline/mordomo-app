@@ -1,3 +1,8 @@
+import { useState, useMemo } from 'react'
+import { useApp, ScreenHeader, ChipRow, ItemCard, Placeholder } from '../ui'
+import { Icon } from '../icons'
+import { EXPLORE_ITEMS, EXPLORE_CATEGORIES } from '../data'
+
 /* Explore — unified discovery screen */
 
 const ExploreScreen = () => {
@@ -159,4 +164,4 @@ const ExploreScreen = () => {
   );
 };
 
-window.ExploreScreen = ExploreScreen;
+export default ExploreScreen

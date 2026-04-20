@@ -1,3 +1,8 @@
+import { useState } from 'react'
+import { useApp, ScreenHeader, ChipRow, ListRow, Sheet } from '../ui'
+import { Icon } from '../icons'
+import { SERVICE_GROUPS } from '../data'
+
 /* Services — grouped by intent */
 
 const ServicesScreen = () => {
@@ -112,7 +117,7 @@ const ServicesScreen = () => {
             </div>
 
             {/* Custom request */}
-            <div style={{ padding: "24px var(--pad-screen)" }}>
+            {/* <div style={{ padding: "24px var(--pad-screen)" }}>
                 <div className="t-eyebrow" style={{ marginBottom: 10 }}>
                     Algo diferente?
                 </div>
@@ -124,7 +129,7 @@ const ServicesScreen = () => {
                     <Icon name="sparkle" size={16} stroke={1.8} />
                     Pedir ao Mordomo em conversa
                 </button>
-            </div>
+            </div> */}
 
             <Sheet open={!!confirming} onClose={() => setConfirming(null)}>
                 {confirming && (
@@ -169,4 +174,4 @@ const ServicesScreen = () => {
     )
 }
 
-window.ServicesScreen = ServicesScreen
+export default ServicesScreen

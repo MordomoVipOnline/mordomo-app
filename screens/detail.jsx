@@ -1,3 +1,7 @@
+import { useState } from 'react'
+import { useApp, Placeholder, ButlerBubble, Sheet } from '../ui'
+import { Icon } from '../icons'
+
 /* Detail — full-screen modal for any explore item */
 
 const DetailScreen = ({ item, onClose }) => {
@@ -162,4 +166,4 @@ const InfoStat = ({ icon, label, value }) => (
   </div>
 );
 
-window.DetailScreen = DetailScreen;
+export default DetailScreen
