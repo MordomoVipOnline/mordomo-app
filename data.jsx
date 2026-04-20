@@ -1,8 +1,8 @@
 /* Mordomo data — Portuguese (Brazil) */
 
 const GUEST = {
-    name: "Helena",
-    firstName: "Helena",
+    name: "Emanuel",
+    firstName: "Emanuel",
     checkIn: "14 abr",
     checkOut: "19 abr",
     dayOfStay: 3,
@@ -400,7 +400,7 @@ const BUTLER_SUGGESTIONS = {
     evening: [
         {
             id: "b-e1",
-            text: "Boa noite, Helena. O Orla tem uma mesa livre às 20h — com vista mar.",
+            text: "Boa noite, Emanuel. O Orla tem uma mesa livre às 20h — com vista mar.",
         },
         {
             id: "b-e2",
@@ -410,7 +410,7 @@ const BUTLER_SUGGESTIONS = {
 }
 
 const CHAT_HISTORY = [
-    { from: "butler", text: "Boa tarde, Helena. Como posso ajudar?" },
+    { from: "butler", text: "Boa tarde, Emanuel. Como posso ajudar?" },
     {
         from: "butler",
         text: "Notei que você favoritou o veleiro ao pôr do sol. Hoje ainda há 2 vagas.",
