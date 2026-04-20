@@ -1,4 +1,4 @@
-/* Mordomo app — root component */
+/* Mordomo app — root component  */
 
 const App = () => {
     const [tab, setTab] = useState(
