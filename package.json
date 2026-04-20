@@ -1,0 +1,10 @@
+{
+    "name": "mordomo",
+    "version": "1.0.0",
+    "description": "Mordomo — Atendente Virtual (Virtual Concierge PWA)",
+    "scripts": {
+        "start": "python3 -m http.server 3000",
+        "serve": "npx serve . --listen 3000 --no-clipboard",
+        "dev": "npx http-server . -p 3000 -c-1 --cors -o"
+    }
+}
