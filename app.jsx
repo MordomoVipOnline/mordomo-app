@@ -1,19 +1,19 @@
-import { useState, useEffect } from 'react'
-import { AppCtx, TopBar, TabBar, Sheet, Toast } from './ui'
-import { Icon } from './icons'
-import { NOTIFICATIONS } from './data'
-import HomeScreen from './screens/home'
-import ExploreScreen from './screens/explore'
-import MyStayScreen from './screens/mystay'
-import ProfileScreen from './screens/profile'
-import ShopScreen from './screens/shop'
-import InfoScreen from './screens/info'
-import ServicesScreen from './screens/services'
-import DetailScreen from './screens/detail'
-import ButlerScreen from './screens/butler'
-import NotificationsScreen from './screens/notifications'
+import { useState, useEffect } from "react"
+import { AppCtx, TopBar, TabBar, Sheet, Toast } from "./ui"
+import { Icon } from "./icons"
+import { NOTIFICATIONS } from "./data"
+import HomeScreen from "./screens/home"
+import ExploreScreen from "./screens/explore"
+import MyStayScreen from "./screens/mystay"
+import ProfileScreen from "./screens/profile"
+import ShopScreen from "./screens/shop"
+import InfoScreen from "./screens/info"
+import ServicesScreen from "./screens/services"
+import DetailScreen from "./screens/detail"
+import ButlerScreen from "./screens/butler"
+import NotificationsScreen from "./screens/notifications"
 
-/* Mordomo app — root component  */
+/* Mordomo app — root component */
 
 const App = () => {
     const [tab, setTab] = useState(
